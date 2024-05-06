@@ -1,0 +1,44 @@
+{
+  "name": "se-containers-react",
+  "version": "1.0.6",
+  "description": "SDK for SE Containers",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "private": false,
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "rollup-watch": "rollup -c -w",
+    "build": "npm run prebuild && rollup -c"
+  },
+  "author": "Jakub Wozniak",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.79",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "typescript": "5.4.5",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.14.3",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "ts-loader": "9.5.1"
+  },
+  "dependencies": {
+    "tslib": "^2.6.2"
+  }
+}
